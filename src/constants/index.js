@@ -1,3 +1,6 @@
+import { FreshIcon, OrganicIcon, AdditivesIcon, FarmIcon } from "../assets";
+
+
 export const navLinks = [
     {
       id: "about",
@@ -25,26 +28,30 @@ export const navLinks = [
     {
       id: 1,
       title: "Always Fresh",
-      description: "Thanks to innovative organic technologies, our products are always fresh and don’t need any treatment.",
-      icon: "🍊", // Example icon (could be an emoji or class from an icon library)
+      description:
+        "Thanks to innovative organic technologies, our products are always fresh and don’t need any treatment.",
+      image: FreshIcon,
     },
     {
       id: 2,
       title: "100% Organic",
-      description: "We adhere to our organic philosophy, which implies avoiding pesticides and non-organic fertilizers.",
-      icon: "🌱",
+      description:
+        "We adhere to our organic philosophy, which implies avoiding pesticides and non-organic fertilizers.",
+      image: OrganicIcon,
     },
     {
       id: 3,
       title: "No Additives",
-      description: "We avoid any artificial additives after harvesting the crops to offer you the best organic products.",
-      icon: "🚫",
+      description:
+        "We avoid any artificial additives after harvesting the crops to offer you the best organic products.",
+      image: AdditivesIcon,
     },
     {
       id: 4,
       title: "Modern Farm",
-      description: "Though we rely on traditional organic farming a lot, we also use the latest farming innovations.",
-      icon: "🏡",
+      description:
+        "Though we rely on traditional organic farming a lot, we also use the latest farming innovations.",
+      image: FarmIcon,
     },
   ];
   

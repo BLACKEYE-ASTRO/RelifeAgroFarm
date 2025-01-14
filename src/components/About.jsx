@@ -1,7 +1,7 @@
-import React from 'react';
-import { orange } from '../assets';
-import { styles } from '../styles';
-import { features } from '../constants';
+import React from "react";
+import { orange } from "../assets";
+import { styles } from "../styles";
+import { features } from "../constants";
 
 const About = () => {
   return (
@@ -29,13 +29,27 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-center bg-black text-white p-5 gap-8 mb-10">
-        {features.map(({ id, title, description, icon }) => (
+        {features.map(({ id, title, description, image }) => (
           <div
             key={id}
             className="flex flex-col items-center text-center p-6 max-w-xs bg-[#1a1a1a] rounded-lg shadow-lg"
           >
-            <div className="text-4xl mb-4 text-[#6a994e]">{icon}</div>
-            <span className="text-2xl font-semibold text-[#6a994e] mb-4">{`0${id}`}</span>
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <img
+                src={image}
+                alt={title}
+                className="w-16 h-16 object-contain"
+              />
+              <span
+                className="text-5xl font-bold text-transparent"
+                style={{
+                  WebkitTextStroke: "2px #6a994e",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                {`0${id}`}
+              </span>
+            </div>
             <h1 className="uppercase text-2xl font-bold mb-4">{title}</h1>
             <p className="text-gray-300">{description}</p>
           </div>
