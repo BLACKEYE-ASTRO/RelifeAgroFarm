@@ -15,7 +15,7 @@ const Products = () => {
     <section className="flex justify-center items-center min-h-screen p-8 bg-gray-100">
       <div className="w-full max-w-screen-lg">
         <header>
-          <h1 className="text-center p-5 mb-10 text-5xl font-semibold tracking-widest uppercase">
+          <h1 className="text-center p-5 mb-10 text-3xl md:text-5xl font-semibold tracking-widest uppercase">
             Products
           </h1>
         </header>
