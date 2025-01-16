@@ -1,60 +1,62 @@
 import { FreshIcon, OrganicIcon, AdditivesIcon, FarmIcon } from "../assets";
 
-
 export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "skills",
-      title: "Skills",
-    },
-    {
-      id: "projects", 
-      title: "Projects",
-    },
-    {
-      id: "work",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
 
-  export const features = [
-    {
-      id: 1,
-      title: "Always Fresh",
-      description:
-        "Thanks to innovative organic technologies, our products are always fresh and don’t need any treatment.",
-      image: FreshIcon,
-    },
-    {
-      id: 2,
-      title: "100% Organic",
-      description:
-        "We adhere to our organic philosophy, which implies avoiding pesticides and non-organic fertilizers.",
-      image: OrganicIcon,
-    },
-    {
-      id: 3,
-      title: "No Additives",
-      description:
-        "We avoid any artificial additives after harvesting the crops to offer you the best organic products.",
-      image: AdditivesIcon,
-    },
-    {
-      id: 4,
-      title: "Modern Farm",
-      description:
-        "Though we rely on traditional organic farming a lot, we also use the latest farming innovations.",
-      image: FarmIcon,
-    },
-  ];
-  
+  {
+    id: "home",
+    title: "Home",
+    path: "/",
+  },
+
+  {
+    id: "about",
+    title: "About",
+    path: "/about",
+  },
+  {
+    id: "product",
+    title: "Products",
+    path: "/products",
+  },
+  {
+    id: "contact-us",
+    title: "Contact Us",
+    path: "/contact-us",
+    isButton: "true",
+  },
+];
+
+export const features = [
+  {
+    id: 1,
+    title: "Always Fresh",
+    description:
+      "Thanks to innovative organic technologies, our products are always fresh and don’t need any treatment.",
+    image: FreshIcon,
+  },
+  {
+    id: 2,
+    title: "100% Organic",
+    description:
+      "We adhere to our organic philosophy, which implies avoiding pesticides and non-organic fertilizers.",
+    image: OrganicIcon,
+  },
+  {
+    id: 3,
+    title: "No Additives",
+    description:
+      "We avoid any artificial additives after harvesting the crops to offer you the best organic products.",
+    image: AdditivesIcon,
+  },
+  {
+    id: 4,
+    title: "Modern Farm",
+    description:
+      "Though we rely on traditional organic farming a lot, we also use the latest farming innovations.",
+    image: FarmIcon,
+  },
+];
+
 
 export const fruits = [
   {

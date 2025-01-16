@@ -1,18 +1,18 @@
-import React from 'react';
+import React  from 'react';
 import FruitCard from './FruitCard';
 import { fruits } from '../constants';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const Products = () => {
-  const [loading, setLoading] = React.useState(true);
+  const [loading, setLoading] = useState(true);
 
-  // Simulate data fetching (remove or replace with actual fetch in production)
-  React.useEffect(() => {
-    setTimeout(() => setLoading(false), 2000); // Simulate a 2-second loading time
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000); 
   }, []);
 
   return (
-    <section className="flex justify-center items-center min-h-screen p-8 bg-gray-100">
+    <section className="flex justify-center items-center min-h-screen mt-20 p-8 bg-gray-100">
       <div className="w-full max-w-screen-lg">
         <header>
           <h1 className="text-center p-5 mb-10 text-3xl md:text-5xl font-semibold tracking-widest uppercase">
